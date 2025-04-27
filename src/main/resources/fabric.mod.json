@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "wacko-beacons",
+	"version": "${version}",
+	"name": "Wacko Beacons",
+	"description": "A proof of concept showing a server-side problem that breaks beacons in very specific ways.",
+	"authors": [
+		"GetCmdRolled"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL2",
+	"icon": "assets/wacko-beacons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [],
+		"client": []
+	},
+	"mixins": [
+		"wacko-beacons.mixins.json",
+		{
+			"config": "wacko-beacons.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

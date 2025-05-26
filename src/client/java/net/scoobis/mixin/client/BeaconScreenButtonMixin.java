@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import net.minecraft.client.gui.screen.ingame.BeaconScreen;
 
-@Mixin(BeaconScreen.EffectButtonWidget.class)
+@Mixin(targets = "net.minecraft.client.gui.screen.ingame.BeaconScreen$EffectButtonWidget")
 abstract class BeaconScreenButtonMixin extends ClickableWidget {
 	public BeaconScreenButtonMixin(int x, int y, int width, int height, Text message) {
 		super(x, y, width, height, message);

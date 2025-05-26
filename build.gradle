@@ -27,8 +27,6 @@ loom {
 			sourceSet sourceSets.client
 		}
 	}
-
-	accessWidenerPath = file("src/main/resources/wacko-beacons.accesswidener")
 }
 
 dependencies {

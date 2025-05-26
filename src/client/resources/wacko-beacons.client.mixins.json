@@ -1,12 +1,12 @@
 {
-	"required": true,
-	"package": "net.scoobis.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"BeaconScreenButtonMixin",
-		"BeaconBlockEntityMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "net.scoobis.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BeaconBlockEntityMixin",
+    "BeaconScreenButtonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
